@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sort-Ed</title>
+    <!------------------  stylesheet linking  -------------------->
+    <link rel="stylesheet" href="Assets/style/style.css" />
+    <link rel="stylesheet" href="Assets/style/nav-style.css" />
+    <link rel="stylesheet" href="Assets/style/mobile.css" />
+  </head>
+
+  <body>
+    <!-- navbar section -->
+    <header class="header">
+      <a href="#" class="header__logo">Sort-Ed</a>
+
+      <ion-icon
+        name="menu-outline"
+        class="header__toggle"
+        id="nav-toggle"
+      ></ion-icon>
+
+      <nav class="nav" id="nav-menu">
+        <div class="nav__content bd-grid">
+          <ion-icon
+            name="close-outline"
+            class="nav__close"
+            id="nav-close"
+          ></ion-icon>
+
+          <div class="nav__perfil">
+            <div class="nav__img">
+              <img src="assets/img/perfil.png" alt="" />
+            </div>
+
+            <div>
+              <a href="#" class="nav__name">Sort-Ed</a>
+              <!-- <span class="nav__profesion">Web designer</span> -->
+            </div>
+          </div>
+
+          <div class="nav__menu">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#hero-page" class="nav__link active">Home</a>
+              </li>
+              <li class="nav__item">
+                <a href="#question-answer" class="nav__link">About</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Register</a>
+              </li>
+              <li class="nav__item">
+                <a href="#p" class="nav__link">Blog</a>
+              </li>
+              <!-- <li class="nav__item">
+              <a href="#one" class="nav__link">Contact</a>
+            </li> -->
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- ============================= Hero section ============================= -->
+    <section class="hero-section" id="hero-section">
+      <div class="main-container" id="main-container">
+        <div class="main-content-container" id="main-content-container">
+          <h1 class="main-title">Think Career. Think Sort-Ed.</h1>
+          <h2 class="main-subtitle">
+            A platform for all your <br />
+            Educational needs.
+          </h2>
+          <h3 class="main-text">
+            Explore The Universe Of Opportunities <br />
+            Starting with a modern-age Textbook subscription platform
+          </h3>
+          <a href=""
+            ><button>
+              <strong>Pre-Register Now</strong>
+              <img
+                src="images/Icon awesome-arrow-right white.svg"
+                alt=""
+              /></button
+          ></a>
+        </div>
+        <div class="main-content-image" id="main-content-image">
+          <img
+            src="images/hero image.svg"
+            alt="Sort-ed hero container two boys image."
+            class="main-image"
+          />
+        </div>
+      </div>
+      <div class="marquee-container" id="marquee-container">
+        <a href="">
+          <marquee width="100%" direction="left" loop="100" scrollamount="10">
+            <pre>Launching <span>Nashik Chapter</span>                                                                                             Sign Up Open for <span>Early Access</span>                                                                                             Launching <span>Nashik Chapter</span>                                                                                             Sign Up Open for <span>Early Access</span></pre>
+          </marquee>
+        </a>
+      </div>
+    </section>
+
+    <!-- =========================== video and counter section ==========================  -->
+    <section class="video-counter" id="video-counter">
+      <div class="counter-container">
+        <div class="counter-box">
+          <h2>
+            <span class="count counter" data-target="2000">2000+</span
+            ><span class="square"></span>
+          </h2>
+          <p>Registrations</p>
+        </div>
+        <div class="counter-box">
+          <h2>
+            <span class="count counter" data-target="5">5+</span>
+            <span class="square"></span>
+          </h2>
+          <p>Publications</p>
+        </div>
+        <div class="counter-box">
+          <h2>
+            <span class="count counter" data-target="20">20+</span>
+            <span class="square"></span>
+          </h2>
+          <p>Colleges</p>
+        </div>
+        <div class="counter-box">
+          <h2>
+            <span class="count counter" data-target="50">50+</span>
+            <span class="square"></span>
+          </h2>
+          <p>Ambassadors</p>
+        </div>
+      </div>
+
+      <div class="video-container">
+        <div class="video-container-text">
+          <h2 class="title-text">
+            Want To Get Textbooks Hassle-Free? Perfect.
+          </h2>
+          <p class="subtitle-text">
+            Subscribe & get complete set of your semester textbooks delivered at
+            your doorstep.
+          </p>
+          <p class="text">
+            Once used, Exchange your textbooks with next semester books. All at
+            ease of your convinient place and time. Subscriptions starting at
+            <strong>999/sem.</strong>
+          </p>
+          <!-- ========== animated text =============  -->
+          <p class="animated title-text">
+            Save&nbsp;
+            <a
+              href=""
+              class="typewrite"
+              data-period="1500"
+              data-type='[ " Time"," Energy"," Money"]'
+            >
+              <span class="wrap"></span>
+            </a>
+          </p>
+        </div>
+        <div class="video-container-video">
+          <iframe
+            width="510"
+            height="290"
+            src="https://www.youtube.com/embed/A0wcdnzzyIE?controls=0"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!--======================== solutions we offer page================  -->
+
+    <!-- js part -->
+    <!-- <script src="js/nav.js"></script> -->
+    <script>
+      var TxtType = function (el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = "";
+        this.tick();
+        this.isDeleting = false;
+      };
+
+      TxtType.prototype.tick = function () {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+          this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+          this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap">' + this.txt + "</span>";
+
+        var that = this;
+        var delta = 200 - Math.random() * 100;
+
+        if (this.isDeleting) {
+          delta /= 2;
+        }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+          delta = this.period;
+          this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === "") {
+          this.isDeleting = false;
+          this.loopNum++;
+          delta = 500;
+        }
+
+        setTimeout(function () {
+          that.tick();
+        }, delta);
+      };
+
+      window.onload = function () {
+        var elements = document.getElementsByClassName("typewrite");
+        for (var i = 0; i < elements.length; i++) {
+          var toRotate = elements[i].getAttribute("data-type");
+          var period = elements[i].getAttribute("data-period");
+          if (toRotate) {
+            new TxtType(elements[i], JSON.parse(toRotate), period);
+          }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML =
+          ".typewrite > .wrap { border-right: 0.08em solid #ee3608}";
+        document.body.appendChild(css);
+      };
+
+      /*===== MENU SHOW Y HIDDEN =====*/
+      const navMenu = document.getElementById("nav-menu"),
+        toggleMenu = document.getElementById("nav-toggle"),
+        closeMenu = document.getElementById("nav-close");
+
+      /*SHOW*/
+      toggleMenu.addEventListener("click", () => {
+        navMenu.classList.toggle("show");
+      });
+
+      /*HIDDEN*/
+      closeMenu.addEventListener("click", () => {
+        navMenu.classList.remove("show");
+      });
+
+      /*===== ACTIVE AND REMOVE MENU =====*/
+      const navLink = document.querySelectorAll(".nav__link");
+
+      function linkAction() {
+        /*Active link*/
+        navLink.forEach((n) => n.classList.remove("active"));
+        this.classList.add("active");
+
+        /*Remove menu mobile*/
+        navMenu.classList.remove("show");
+      }
+      navLink.forEach((n) => n.addEventListener("click", linkAction));
+    </script>
+    <script type="text/javascript">
+      $(".btn").on("click", function () {
+        $(".menu").toggleClass("show");
+      });
+
+      //  ============== animated text ==================
+    </script>
+
+    <!-- <script>
+    const counts = document.querySelectorAll('.count')
+const speed = 5
+
+counts.forEach((counter) => {
+    function upDate(){
+        const target = Number(counter.getAttribute('data-target'))
+        const count = Number(counter.innerText)
+        const inc = target / speed        
+        if(count < target){
+            counter.innerText = Math.floor(inc + count) 
+            setTimeout(upDate, 120)
+        }else{
+            counter.innerText = target
+        }
+    }
+    upDate()
+})
+  </script> -->
+  </body>
+</html>
